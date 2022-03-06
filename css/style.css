@@ -258,6 +258,28 @@ footer{
 	font-size: 24px;
 	line-height: 1;
 }
+
+.site-logo{
+	width: auto;
+	height: 50px;
+}
+.site-logo img{
+	display: block;
+	width: auto;
+	height: 50px;
+}
+
+.main_menu{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	min-height: 50px;
+}
+.main_menu li .menu-icon{
+	font-size: 30px;
+	line-height: 1;
+}
+
 .menu li{
 	font-size: 20px;
 }

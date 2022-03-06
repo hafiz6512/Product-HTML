@@ -1,0 +1,501 @@
+/*
+Theme Name: larkyparky
+Theme URI: www.Monjil.com.bd
+Author: Jobaer Shuman
+Author URI: www.diehardcoder.com
+Description: 2018 larkyparky reseller site
+Version: 1.0
+*/
+
+html {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after{
+	-webkit-box-sizing: inherit;
+	   -moz-box-sizing: inherit;
+			box-sizing: inherit;
+}
+
+body{
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* common style */
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 20px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+a{
+	color: #8bc34a;
+	outline: none !important;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	   -moz-transition: all 0.3s ease-in-out 0s;
+	     -o-transition: all 0.3s ease-in-out 0s;
+	    -ms-transition: all 0.3s ease-in-out 0s;
+	        transition: all 0.3s ease-in-out 0s;
+}
+
+a:active,
+a:focus,
+a:hover{
+	color: #56ffff;
+	outline: none !important;
+	text-decoration: none;
+}
+
+ul li,
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size: 36px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 20px;
+}
+
+h5{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 20px;
+	font-weight: normal;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+button{
+	border: none;
+}
+
+label{
+	font-weight: normal;
+	display: block;
+}
+
+textarea, select, input{
+	display: inline-block;
+	background-color: #fff;
+	color: #333;
+	height: 46px;
+	width: 100%;
+	padding: 12px 10px 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	outline: none !important;
+	border-radius: 4px;
+	box-shadow: none;
+	margin-bottom: 10px;
+	border: 1px solid #8bc34a;
+}
+
+select{
+	background: #fff url(images/select_arrow_bg.png) no-repeat right center;
+	padding: 8px 40px 8px 10px;
+	cursor: pointer;
+	color: #000;
+	-webkit-appearance: none; 
+       -moz-appearance: none;
+   			appearance: none;
+}
+
+textarea{
+	height: auto;
+	min-height: 100px;
+}
+
+textarea:focus, select:focus, input:focus{
+	border-color: #639823;
+	outline: none !important;
+	box-shadow: none;
+}
+
+input[type="submit"],
+.button{
+	font-family: 'Open Sans', sans-serif;
+	background: #8bc142;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	text-align: center;
+	padding: 12px 15px 12px;
+	border-radius: 4px;
+	border: 1px solid #8bc34a;
+	height: 46px;
+	box-shadow: none;
+	width: auto;
+	min-width: auto;
+	text-shadow: none;
+	cursor: pointer;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	   -moz-transition: all 0.3s ease-in-out 0s;
+	    -ms-transition: all 0.3s ease-in-out 0s;
+	     -o-transition: all 0.3s ease-in-out 0s;
+			transition: all 0.3s ease-in-out 0s;
+			
+}
+
+input[type="submit"].btn_lg,
+.button.btn_lg{
+	height: 58px;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	padding: 20px 25px 14px;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+.button:active,
+.button:focus,
+.button:hover{
+	background: #639823;
+	border-color: #639823;
+	color: #fff;
+	outline: none !important;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="file"]:active,
+input[type="checkbox"]:active, 
+input[type="radio"]:active,
+input[type="file"]:focus,
+input[type="checkbox"]:focus, 
+input[type="radio"]:focus{
+	outline: none !important;
+}
+
+
+::-webkit-input-placeholder { color: #6e6e6e; opacity: 1; }
+:-moz-placeholder { color: #6e6e6e; opacity: 1; }
+::-moz-placeholder { color: #6e6e6e; opacity: 1; }
+:-ms-input-placeholder { color: #6e6e6e; opacity: 1; }
+
+
+
+/*** To start style ***/
+.clearFix:after,
+.clearFix:before,
+.wrapper:after,
+.wrapper:before,
+.sec_block:after,
+.sec_block:before,
+section:after,
+section:before,
+header:after,
+header:before,
+footer:before,
+footer:after{
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.wrapper,
+.sec_block,
+section,
+header,
+footer{
+	display: block;
+	clear: both;
+}
+
+.wrapper{
+	position: relative;
+	width: 100%;
+}
+
+/** header **/
+.logo{
+	font-size: 24px;
+	line-height: 1;
+}
+.menu li{
+	font-size: 20px;
+}
+
+.header{
+	background: #2e353b;
+	padding: 20px 0;
+	text-align: center;
+	color: #fff;
+}
+
+/** banner **/
+.banner{
+	background-image: url(../images/banner_bg2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 280px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+.bgCover{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+/**  site login **/
+.site_login{
+	background-image: url("../images/login_bg.jpg");
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-size: cover; 
+	padding: 15px;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login_form{
+	text-align: center;
+	background: #ffffff none repeat scroll 0 0;
+	border-radius: 2px;
+	margin: 20px auto 30px;
+	max-width: 400px;
+	width: 100%;
+	padding: 30px 30px; 
+}
+
+.login_form h2 { 
+	font-size: 20px;
+}
+
+.login_form .form-control {
+	background: #f7f7f7 none repeat scroll 0 0;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+	font-size: 14px;
+	height: 46px;
+	line-height: 46px;
+}
+
+.login_form .form-group {
+	margin-bottom: 10px;
+}
+.login_form  .btn.btn-primary {
+	background: #f0ad4e none repeat scroll 0 0;
+	border-color: #f0ad4e;
+	color: #ffffff;
+	font-size: 20px;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	padding: 0;
+}
+.forgot {
+ 	text-align: left; 
+ 	margin-bottom: 20px;
+}
+.forgot a {
+	color: #777777;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+/** main content **/
+.main_content{
+	padding-top: 60px;
+	position: relative;
+}
+
+/** Product **/
+.pdr_item{
+	display: block;
+	width: 100%;
+	max-width: 470px;
+	margin: 20px auto 30px;
+	position: relative;
+}
+.pdr_item .pdr_img{
+	display: inline-block;
+	width: 100%;
+	min-height: 200px;
+	position: relative;
+}
+.pdr_item .pdr_img img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.pdr_item .pdr_desc{
+	display: inline-block;
+	width: 100%;
+	padding-top: 12px;
+	color: #444444;
+}
+
+.pdr_item .pdr_desc .h3,
+.pdr_item .pdr_desc h3{
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 0 0 10px;
+}
+.pdr_item .pdr_meta{
+	display: inline-block;
+	width: 100%;
+}
+
+.pro_price span{
+    font-size: 14px;
+	font-weight: 700;
+    color: #444444;
+}
+
+.pro_price .old_price{
+    color: #8a8a8a;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.pro_rating{
+	display: inline-block;
+    color: #8a8a8a;
+}
+.pro_rating .pdr_badge i,
+.pro_rating .pdr_badge i.fa{
+	opacity: 0.8;
+}
+
+.sale_tag{
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+.sale_tag span{
+	background: #ee3333;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 3px 12px;
+    font-size: 12px;
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    margin-bottom: 7px;
+    border-radius: 3px;
+}
+.sale_tag span.sale{
+	background: #444444;
+}
+
+.rt_fill{
+	color: #ee3333;
+}
+
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+
+/** footer **/
+.footer{
+	background: #2e353b;
+	margin-top: 40px;
+	padding: 40px 0 20px;
+	color: #6e7479;
+}
+.footer .footer_item{
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 30px;
+}
+.footer .footer_item h2{
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 15px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.footer .footer_item ul{
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.footer .footer_item ul li{
+	display: block;
+}
+
+.footer .footer_item p,
+.footer .footer_item li,
+.footer .footer_item li a{
+	font-size: 15px;
+	line-height: 1.8;
+	color: #6e7479;
+}
+.footer .copyright{
+	padding: 10px 0;
+	text-align: left;
+}
+.footer .copyright p{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}

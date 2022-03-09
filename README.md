@@ -5,8 +5,8 @@
 ### [DHC](http://diehardcoder.com)
 
 ## Contact With Me
-Email: hafiz6512@gmail.com
-Skype: hafiz6512
+#### Email: hafiz6512@gmail.com
+#### Skype: hafiz6512
 
 ## License
 
